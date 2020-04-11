@@ -60,16 +60,19 @@ p {
 }
 
 .middle-container {
+  height: 600px;
   margin: 50px 0;
+  position: relative;
 }
 
 .card {
-  width: 27%;
+  width: 340px;
+  height: 235px;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
   padding: 25px;
   text-align: left;
-  display: inline-block;
+  display: block;
 }
 
 .icon {
@@ -79,31 +82,34 @@ p {
 
 .teambuilder {
   border-top: 5px solid hsl(0, 78%, 62%);
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 435px;
 }
 
 .calculator {
   border-top: 5px solid hsl(212, 86%, 64%);
-  position: relative;
+  position: absolute;
   top: 150px;
-  left: 30px;
+  right: 10px;
 }
 
 .karma {
   border-top: 5px solid hsl(34, 97%, 64%);
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 320px;
+  left: 435px;
 }
 
 .supervisor {
   border-top: 5px solid hsl(180, 62%, 55%);
-  position: relative;
+  position: absolute;
   top: 150px;
-  right: 30px;
+  left: 10px;
 }
 
 .bottom-container {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .attribution {
@@ -117,7 +123,7 @@ p {
 </style>
 
 <body>
-  <div class="top-container">
+  <div>
 
     <h1>Reliable, efficient delivery</h1>
     <h2>Powered by Technology</h2>
@@ -126,7 +132,6 @@ p {
       to ensure that your project is successful</h4>
   </div>
 
-  <!--The section above is finished. Start creating the four card features using float properties, relative and absolute positioning -->
   <div class="middle-container">
     <div class="card supervisor">
       <h3>Supervisor</h3>
